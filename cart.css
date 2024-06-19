@@ -1,0 +1,151 @@
+/* Cart Component CSS */
+
+.cart-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  thead th {
+    background-color: #e0f7e9;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  td button {
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  td button:focus {
+    outline: none;
+  }
+  
+  td button:hover {
+    background-color: #e55a4f;
+  }
+  
+  td small {
+    display: block;
+    margin-top: 5px;
+    color: #555;
+  }
+  
+  @media (max-width: 600px) {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
+  
+    thead tr {
+      display: none;
+    }
+  
+    tr {
+      margin-bottom: 10px;
+    }
+  
+    td {
+      padding: 10px;
+      border: none;
+      position: relative;
+      padding-left: 50%;
+      text-align: right;
+    }
+  
+    td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      width: calc(50% - 20px);
+      text-align: left;
+      font-weight: bold;
+    }
+  }
+  body {
+    font-family: Arial, sans-serif;
+}
+
+.cart-total-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.cart-total h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cart-total .subtotal, .cart-total .total {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-total .total {
+    border-bottom: none;
+}
+
+.cart-total .checkout-btn {
+    width: 100%;
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+.cart-total .continue-ordering-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #a4ffeb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cart-total .continue-ordering-btn:hover {
+    background-color: #92e8d4;
+}
+
+  
